@@ -1,0 +1,17 @@
+### @name pingHello
+GET http://localhost:8080/slow
+Accept: text/plain
+
+> {%
+    client.test("hello 200", () => client.assert(response.status === 200));
+%}
+
+###
+
+### @name pingSlow
+GET http://localhost:8080/slow
+Accept: text/plain
+
+> {%
+    client.test("slow 200", () => client.assert(response.status === 200));
+%}

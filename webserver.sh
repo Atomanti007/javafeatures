@@ -1,0 +1,1 @@
+.\jwebserver.exe -p 8080 -d D:\Project\javaFeatures\public
